@@ -2,7 +2,7 @@ FROM alpine:latest
 MAINTAINER James Z.M. Gao <gaozm55@gmail.com>
 
 RUN set -ex \
-    wget http://download.savannah.gnu.org/releases/oath-toolkit/oath-toolkit-2.6.1.tar.gz \
+    && wget http://download.savannah.gnu.org/releases/oath-toolkit/oath-toolkit-2.6.1.tar.gz \
     && apk --update upgrade \
     && apk add --no-progress --virtual .build-deps \
                gcc \
