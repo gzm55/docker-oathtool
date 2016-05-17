@@ -15,6 +15,7 @@ RUN set -ex \
                make \
                diffutils \
                file \
+    && tar xzvf /oath-toolkit-*.tar.gz \
     && cd /oath-toolkit-* \
     && ./configure --disable-pskc --disable-shared --disable-xmltest \
     && make check \
